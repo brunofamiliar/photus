@@ -4,17 +4,12 @@
     </a>
 </p>
 
-</br>
-
 <h1 align="center">
   Photus
 </h1>
 
 [![Author](https://img.shields.io/badge/author-brunofamiliar-green?style=for-the-badge&logo=github)]('https://github.com/brunofamiliar')
 ![GitHub Repo stars](https://img.shields.io/github/stars/brunofamiliar/photus?color=green&style=for-the-badge)
-
-</br>
-</br>
 
 ## 💡 Motivo
 Sabemos o quanto é difícil para um desenvolvedor web escolher e trabalhar com componentes e bibliotecas de construção de interfaces. Pensando nisso, desenvolvemos uma solução usando javascript puro para facilitar o gerencimento de um processo extremamente custoso: a construção de galerias de imagens; que permite mais agilidade e otimiza o seu tempo. Essa biblioteca está sendo projetada para ter alta escalabilidade e flexibilizade, além de integrar fielmente ao design definido.
