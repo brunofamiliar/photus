@@ -40,6 +40,9 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+dist/css
+dist/*.js
+dist/*.css
 
 # TypeScript v1 declaration files
 typings/
@@ -80,7 +83,6 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/

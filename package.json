@@ -4,7 +4,8 @@
   "description": "This project is a library that facilitates the creation of galleries for your systems",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
+    "build": "gulp scss && gulp autoprefixer && gulp js",
+    "dev": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "WebSofter",
@@ -23,9 +24,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.14.1",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "node-sass": "^4.14.1"
   },
   "babel": {
     "presets": [
