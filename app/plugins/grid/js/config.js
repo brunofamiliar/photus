@@ -1,15 +1,10 @@
 export const grid = {
-    columns: 4,
+    columns: 3,
     cardSize: 200,
     gap: 1,
     borderRadius: []
 }
 
-export const carousel = {
-
-}
-
 export default {
-    grid,
-    carousel
+    grid
 }

@@ -1,0 +1,10 @@
+:root{
+    --border-radius: 2px;
+    --card-size: 100%;
+}
+
+.pht__images{
+    max-width: var(--card-size);
+    max-height: var(--card-size);
+    border-radius: var(--border-radius);
+}

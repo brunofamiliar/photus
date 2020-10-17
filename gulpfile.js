@@ -12,11 +12,11 @@ var babel = require("gulp-babel");
  
 sass.compiler = require('node-sass');
 
-const jsSRC = 'app/js/photus.js';
+const jsSRC = 'app/core/js/photus.js';
 const jsDIST = 'dist';
 const jsFILES = "./app/**/*.js"
 
-const scssSRCS = 'app/scss/**/*.scss';
+const scssSRCS = 'app/**/*.scss';
 const cssDIST = 'dist/css';
  
 gulp.task('scss', function () {
@@ -32,7 +32,7 @@ gulp.task('autoprefixer', function () {
   .pipe(autoprefixer({
       cascade: false
   }))
-  .pipe(gulp.dest('./' + jsDIST));
+  .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('js', () =>{
@@ -63,9 +63,9 @@ gulp.task('serve', function() {
         },
     });
 
-    gulp.watch("app/scss/**/*.scss", gulp.series('scss'));
+    gulp.watch(scssSRCS, gulp.series('scss'));
     gulp.watch("demo/*.html").on('change', browserSync.reload);
-    gulp.watch("app/js/**/*.js").on('change', gulp.parallel('js', browserSync.reload));
+    gulp.watch("app/**/*.js").on('change', gulp.parallel('js', browserSync.reload));
 });
 
 gulp.task('default', gulp.series(gulp.parallel('scss', 'autoprefixer','js' , 'serve')));

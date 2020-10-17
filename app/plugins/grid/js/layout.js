@@ -1,7 +1,7 @@
 const changeCss = (grid) => {
     let styleGrid = "";
 
-    const columnsStyle = grid.columns ? ` display: grid; 
+    const columnsStyle = grid.columns ? `
         ${grid.contentWidth ? `max-width: ${grid.contentWidth}px;` : ''}
         column-gap: ${grid.gap}px;
         row-gap: ${grid.gap}px;
@@ -26,16 +26,32 @@ const changeCss = (grid) => {
     return styleGrid += columnsStyle;
 }
 
-export default function(options, arrayImages){
-    if(!Array.isArray(arrayImages))
+export default function (style, images){
+    if(!Array.isArray(images))
         return null;
 
     const section = document.createElement('section');
-    section.style.cssText = changeCss(options.style); 
     
-    arrayImages.forEach(item => {    
+    const gridTemplateColumns = (() => {
+        let gridColumns = '';
+
+        for(let i = 0; i < style.columns; i++) {
+            gridColumns += '1fr '
+        }
+
+        return gridColumns;
+    })()
+
+    section.style.setProperty('--grid-template-columns', gridTemplateColumns)
+    section.style.setProperty('--max-width-section', style.contentWidth + "px")
+    section.style.setProperty('--gap', style.gap + "px")
+
+
+    section.className = "grid"; 
+
+    images.forEach(item => {    
         section.appendChild(item)
     })
-    
+
     return section; 
 }

@@ -1,0 +1,15 @@
+:root {
+    --grid-template-columns: 1fr 1fr 1fr 1fr;
+    --gap: 1px;
+    --border-radius: 2px;
+    --max-width-section: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    max-width: var(--max-width-section);
+    column-gap: var(--gap);
+    row-gap: var(--gap);
+    border-radius: var(--border-radius);
+}
