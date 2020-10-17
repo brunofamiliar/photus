@@ -2,13 +2,14 @@
   "name": "photus",
   "version": "1.0.0",
   "description": "This project is a library that facilitates the creation of galleries for your systems",
-  "main": "index.js",
+  "main": "dist/photus.min.js",
+  "module": "dist/photus.min.js",
   "scripts": {
     "build": "gulp scss && gulp autoprefixer && gulp js",
     "dev": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebSofter",
+  "author": "Edson Bruno Alves dos Santos",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -32,7 +33,6 @@
     ]
   },
   "files": [
-    "dist",
-    "index.d.ts"
+    "dist"
   ]
 }
