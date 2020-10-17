@@ -1,6 +1,6 @@
 {
   "name": "photus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This project is a library that facilitates the creation of galleries for your systems",
   "main": "dist/photus.min.js",
   "module": "dist/photus.min.js",
