@@ -27,11 +27,6 @@
     "gulp-uglify": "^3.0.2",
     "node-sass": "^4.14.1"
   },
-  "babel": {
-    "presets": [
-      "@babel/env"
-    ]
-  },
   "files": [
     "dist"
   ]
