@@ -31,6 +31,11 @@ $ npm install
 $ npm run build
 ```
 
+#### Browser usando CDN
+```
+<script src="https://cdn.jsdelivr.net/npm/photus@1.0.3/dist/photus.min.js"></script>
+```
+
 * Copie os arquivos gerados dentro do diretório <i>"photus/dist"</i> para a raiz do seu projeto;
 * Para utilizar a lib em seu projeto, importe os arquivos .js e .css compilados e crie uma tag <strong>div</strong> com a id <i>"pht__endpoint"</i>, essa tag é necessária para a injeção de dependência. Ex: index.html
 
